@@ -23,3 +23,10 @@ for (let i = 0; i < numberOfArray.length; i++) {
   sum = n + sum;
 }
 console.log('Total: ', sum);
+
+const sum2 = numberOfArray.reduce((previousValue, currentValue)=> {
+  previousValue = previousValue + currentValue;
+  return previousValue;
+},0)
+
+console.log("Sum of array, using reduce :", sum2);
