@@ -7,7 +7,8 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 
 // Write my code
 
-const numbers = [1, 2, 3, 4];
+const strNumbers = prompt('Provide Input the numbers As an Array:');
+const numbers = JSON.parse(strNumbers);
 let sum = 0;
 for (let i = 0; i < numbers.length; i++) {
   const n = numbers[i];
